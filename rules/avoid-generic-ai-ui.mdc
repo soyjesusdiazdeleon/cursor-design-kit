@@ -1,0 +1,22 @@
+---
+description: Evitar estética genérica "hecha por IA" y layouts cliché sin brief explícito.
+globs: "**/*.{tsx,jsx,vue,css,scss,html}"
+alwaysApply: true
+---
+
+# Evitar UI genérica de IA
+
+No uses por defecto (salvo que `DESIGN.md` o el usuario lo exijan):
+
+- Fondo crema `#F4F1EA` + serif display + acento terracota/clay.
+- Hero con gradiente genérico, métricas falsas en tarjetas, o “una palabra resaltada” en el titular.
+- Entrada fade-slide en **cada** sección; hover exagerado en todas las tarjetas.
+- Numeración decorativa 01/02/03 sin secuencia real de contenido.
+- Tipografía Inter/Roboto/system sin decisión documentada en `DESIGN.md`.
+- Iconos Lucide genéricos repetidos sin rol semántico.
+
+En su lugar:
+
+- Ancla el diseño en el **dominio del producto** y en `DESIGN.md`.
+- Usa la skill `frontend-design` en fase de dirección.
+- Un solo momento de motion orquestado vale más que micro-animaciones dispersas.

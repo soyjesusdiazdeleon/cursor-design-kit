@@ -1,0 +1,13 @@
+---
+description: Usar shadcn/ui como base de componentes en proyectos React/Next compatibles.
+globs: "**/*.{tsx,jsx}"
+alwaysApply: true
+---
+
+# shadcn/ui
+
+- Inicializa con `npx shadcn@latest init` si el proyecto aún no tiene shadcn.
+- Añade componentes con `npx shadcn@latest add <component>`; evita duplicar primitivos ya provistos por shadcn (Button, Input, Dialog, etc.).
+- Personaliza con tokens de `DESIGN.md` (variables CSS, theme de Tailwind), no copiando estilos inline inconsistentes.
+- Mantén la convención del proyecto para `components/ui/` y utilidades `cn()`.
+- No introduzcas otra librería de componentes completa (MUI, Chakra, etc.) salvo requisito explícito del producto.

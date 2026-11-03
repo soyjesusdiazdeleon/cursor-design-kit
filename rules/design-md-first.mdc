@@ -1,0 +1,16 @@
+---
+description: Leer y respetar DESIGN.md antes de cualquier trabajo de UI o UX en el repositorio.
+globs: "**/*.{tsx,jsx,vue,svelte,css,scss,html}"
+alwaysApply: true
+---
+
+# DESIGN.md primero
+
+Antes de crear o modificar interfaz (componentes, páginas, estilos globales, tokens):
+
+1. Lee `DESIGN.md` en la raíz del proyecto. Si no existe, usa la plantilla del Cursor Design Kit o la skill `create-design-md` / flujo `design-direction`.
+2. Alinea paleta, tipografía, espaciado, radios, sombras, motion y tono con lo documentado. Desviaciones solo con motivo técnico explícito en comentario de PR o nota al usuario.
+3. Para dirección nueva o rediseño, usa la skill `design-direction` antes de implementar.
+4. Para implementación, usa `design-build`; para cierre de calidad, `design-qa`.
+
+No inventes un sistema visual paralelo en código si contradice `DESIGN.md`.

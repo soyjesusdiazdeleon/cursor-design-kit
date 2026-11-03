@@ -1,0 +1,32 @@
+---
+description: Motion Primitives está en beta; fijar versión del CLI y encapsular uso en el proyecto.
+globs: "**/*.{tsx,jsx}"
+alwaysApply: true
+---
+
+# Motion Primitives (beta)
+
+El ecosistema [Motion Primitives](https://motion-primitives.com) está en **beta**: APIs y componentes pueden cambiar.
+
+## Versión fijada del CLI
+
+Al añadir primitivos al repo, usa:
+
+```bash
+npx motion-primitives@0.1.0 add <component-name>
+```
+
+No uses `@latest` en CI ni en documentación del proyecto salvo actualización coordinada en `DESIGN.md`.
+
+## Dependencia motion
+
+```bash
+npm install motion
+```
+
+## Prácticas
+
+- Encapsula primitivos en componentes propios (`components/motion/…`) para acotar cambios upstream.
+- Documenta en `DESIGN.md` qué primitivos están aprobados y con qué variantes.
+- Respeta `prefers-reduced-motion`; consulta `review-animations` en QA.
+- Para implementación guiada, usa la skill `design-build`.
