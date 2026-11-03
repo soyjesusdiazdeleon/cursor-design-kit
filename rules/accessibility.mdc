@@ -1,0 +1,15 @@
+---
+description: Accesibilidad mínima obligatoria en toda UI nueva o modificada.
+globs: "**/*.{tsx,jsx,vue,svelte,html}"
+alwaysApply: true
+---
+
+# Accesibilidad
+
+- Contraste de texto y controles según tokens de `DESIGN.md`; objetivo WCAG 2.1 AA como mínimo.
+- Todo control interactivo debe ser alcanzable y usable con teclado; foco visible (no `outline: none` sin reemplazo).
+- Imágenes informativas: `alt` significativo; decorativas: `alt=""` o rol presentacional.
+- Formularios: `<label>` asociado o `aria-label` / `aria-labelledby`; errores anunciados (`aria-invalid`, texto de error vinculado).
+- Preferencias de usuario: respetar `prefers-reduced-motion` para animaciones no esenciales.
+- Landmarks y encabezados lógicos en páginas nuevas (`main`, `nav`, niveles de `h*` coherentes).
+- Antes de cerrar UI relevante, considera el flujo `design-qa` (Impeccable audit, break-ui, web-design-guidelines).
